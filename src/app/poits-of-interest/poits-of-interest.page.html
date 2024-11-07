@@ -1,0 +1,45 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
+
+<ion-content>
+
+  <div class="header-image">
+    <ion-img src="assets/images/teatro.png"></ion-img>
+    <div class="header-text">
+      <h1>PONTOS DE INTERESSE</h1>
+      <h2>Explore os pontos turísticos mais icônicos de Lisboa, incluindo monumentos, museus e muito mais.</h2>
+    </div>
+  </div>
+
+
+  <ion-list>
+    <ion-item *ngFor="let location of locations">
+      <ion-thumbnail slot="start">
+        <img [src]="location.image" alt="location">
+      </ion-thumbnail>
+      <ion-label> 
+        <div class="location-details">
+          <h3>
+            <ion-icon slot="start" name="location-outline"></ion-icon>
+            {{ location.name }}
+          </h3>
+        </div>
+          <ion-button expand="block" (click)="openLocationDetails(location)" class="saberMais">
+            <ion-icon  slot="start" name="help-circle-outline"></ion-icon>
+            Saber Mais
+          </ion-button>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+    
+</ion-content>
+
+

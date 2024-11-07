@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{ recipe.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="header-image">
+    <ion-img [src]="recipe.image"></ion-img>
+  </div>
+  <div class="header-text">
+  <h1>{{ recipe.title }}</h1>
+  <h2>{{ recipe.description }}</h2>
+</div>
+</ion-content>

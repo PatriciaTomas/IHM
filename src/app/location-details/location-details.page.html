@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ name }}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="header-image">
+    <img [src]="image" alt="location" class="img">
+  </div>
+  <div class="header-text">
+    <h1>{{name}}</h1>
+    <h2>{{description}}</h2>
+  </div>
+ 
+
+<div class="centered">
+  <ion-img [src]="map"></ion-img>
+</div>
+<div>
+  <ion-item>
+      <ion-icon slot="start" name="location-sharp"></ion-icon>
+      <ion-card-subtitle>{{ address }}</ion-card-subtitle>
+  </ion-item>
+</div>
+
+  
+</ion-content>

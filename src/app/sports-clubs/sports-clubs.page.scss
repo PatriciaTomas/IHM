@@ -1,0 +1,45 @@
+.club-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  max-width: 300px; /* largura máxima do contêiner */
+  margin: auto; /* centralizar horizontalmente */
+}
+
+.club-item img {
+  width: 100%; /* ajustar tamanho da imagem */
+  height: auto;
+}
+
+.clubeName {
+  font-size: 12px; /* aumentar tamanho da fonte do título */
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px; /* reduzir espaçamento inferior */
+}
+
+.clubeDescricao {
+  font-size: 12px; 
+  margin-bottom: 30px;
+}
+
+.ion-list {
+  display: flex;
+  flex-wrap: wrap; /* para que os itens ocupem várias linhas */
+  justify-content: center;
+}
+
+      
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+                              

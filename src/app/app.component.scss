@@ -1,0 +1,42 @@
+//Css Relacionado ao Menu
+
+ion-item, ion-icon{
+  color: var(--Tejo);
+}
+
+.item:hover {
+  color: var(--Eletrico);
+  transition: color 0.2s ease-in-out;
+}
+
+
+.item:hover ion-icon {
+  color:var(--Eletrico);
+  transition: color 0.2s ease-in-out;
+}
+
+ion-item.menu-item {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+ion-menu ion-toolbar{
+  background-color: var(--Sol);
+}
+
+  ion-menu::part(backdrop) {
+    background-color: var(--Sol);
+  }
+
+  .close{
+    color:var(--Tejo)
+  }
+  .close:hover ion-icon{
+    color:white;
+    transition: color 0.2s ease-in-out;
+  }
+
+  
+ 

@@ -1,0 +1,69 @@
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+</div>
+
+<ion-content>
+  
+  <div class="header-image">
+    <ion-img src="assets/images/background1.jpg"></ion-img>
+    <div class="header-overlay">
+      <ion-img src="assets/images/logo.png" slot="end"></ion-img>
+    </div>
+    <div class="header-text">
+      <h1>A APRESENTAR LISBOA</h1>
+      <h2>Conhece a cidade com outros olhos.</h2>
+    </div>
+  </div>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card (click)="goToPage('/gastronomy')">
+          <img src="assets/images/gastronomia.jpg" alt="gastronomia">
+          <ion-card-header>
+            <ion-card-title>Gastronomia</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card (click)="goToPage('/accommodation')" >
+          <img src="assets/images/alojamento.jpg" alt="alojamento">
+          <ion-card-header>
+            <ion-card-title>Alojamento</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card (click)="goToPage('/poits-of-interest')" class="selected">
+          <img src="assets/images/teatro.png" alt="pontos-interesse">
+          <ion-card-header>
+            <ion-card-title>Pontos de Interesse</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+          <ion-col size="6">
+            <ion-card (click)="goToPage('/sports-clubs')">
+              <img src="assets/images/clubes-desportivos.jpg" alt="pontos-interesse">
+              <ion-card-header>
+                <ion-card-title>Clubes Desportivos</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+            </ion-row>
+        </ion-grid>
+      
+        <div class="floating-btn-container">
+          <a (click)="goToPage('/about')" class="floating-btn" aria-label="Ir para a página Sobre nós">
+            <ion-icon name="book-outline"></ion-icon>
+            <span class="text">Clique para saber mais sobre a história da cidade</span>
+          </a>
+        </div>
+        </ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "ExercicioLocalidades",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
